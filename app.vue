@@ -19,7 +19,12 @@ provideHeadlessUseId(() => useId())
 
 <template>
   <div>
-    <NuxtPage/>
+    <div v-if="tg.query_id.query_id">
+      <NuxtPage/>
+    </div>
+    <div v-else>
+      Доступ только через Telegram
+    </div>
 
 <!--    <pre>{{ tg.initDataUnsafe}}</pre>-->
   </div>
