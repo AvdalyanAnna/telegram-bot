@@ -19,7 +19,7 @@ provideHeadlessUseId(() => useId())
 
 <template>
   <div>
-    <div v-if="tg.query_id.query_id">
+    <div v-if="tg.initDataUnsafe.query_id">
       <NuxtPage/>
     </div>
     <div v-else>
