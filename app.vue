@@ -12,6 +12,9 @@ const tg = window?.Telegram.WebApp
 // Use SSR-safe IDs for Headless UI
 provideHeadlessUseId(() => useId())
 
+    provide('tg', tg)
+
+
 </script>
 
 <template>
