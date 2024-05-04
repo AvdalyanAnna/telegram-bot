@@ -14,7 +14,7 @@
   ```
 -->
 <template>
-  <pre>{{tg.initDataUnsafe}}</pre>
+  <pre>{{tg.initDataUnsafe?.user.first_name}} {{tg.initDataUnsafe?.user.last_name}}</pre>
 <!--  <div class="bg-white">-->
 <!--    &lt;!&ndash; Mobile menu &ndash;&gt;-->
 <!--    <TransitionRoot as="template" :show="mobileMenuOpen">-->
