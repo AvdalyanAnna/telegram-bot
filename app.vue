@@ -9,12 +9,15 @@ useHead({
 })
 
 const tg = window?.Telegram.WebApp
-
+// Use SSR-safe IDs for Headless UI
+provideHeadlessUseId(() => useId())
 
 </script>
 
 <template>
   <div>
-    <pre>{{ tg.initDataUnsafe}}</pre>
+    <NuxtPage/>
+
+<!--    <pre>{{ tg.initDataUnsafe}}</pre>-->
   </div>
 </template>
